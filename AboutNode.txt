@@ -531,4 +531,4 @@ e1f9f7c1                            <- Senha
 us-cdbr-iron-east-04.cleardb.net    <- URL de conexão (host)
 heroku_bedd801500e58f6              <- Nome do banco
 
-$ git push heroku master
+$ git push heroku master            <- Sobe a versão para p hiroku
