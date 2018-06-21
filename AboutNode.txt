@@ -511,11 +511,24 @@ app.use(function (req, res, next) {
 
 ********************************************************************************
 #Preparando nosso ambiente para o deploy da aplicação no Heroku
-heroku apps
-heroku login
-heroku apps —help
-heroku apps:create casadocodigo
-#Cria o banco de dados
-heroku addons:create cleardb:ignite
-heroku config
-git push heroku master
+#Ele pega as informações pelo gihub
+#Executar esses comandos dentro da pasta q já está no git
+https://dashboard.heroku.com/apps
+https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+$ heroku                            <- lista as opções
+$ heroku apps                       <- Lista os apps publicados
+$ heroku login                      <- Precisa passar o email e senha
+$ heroku apps --help                <- Mostra o q pode fazer com eles
+$ heroku apps:create cdc-node-01    <- Cria o app
+
+#Cria o banco de dados (É free mais precisa add o cartão de crédito)
+$ heroku addons:create cleardb:ignite   <- Cria o banco mais básico
+$ heroku config                         <- URL do banco
+CLEARDB_DATABASE_URL:
+mysql://be0d6a7e3c02b2:e1f9f7c1@us-cdbr-iron-east-04.cleardb.net/heroku_bedd801500e58f6?reconnect=true
+be0d6a7e3c02b2                      <- Login
+e1f9f7c1                            <- Senha
+us-cdbr-iron-east-04.cleardb.net    <- URL de conexão (host)
+heroku_bedd801500e58f6              <- Nome do banco
+
+$ git push heroku master

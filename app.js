@@ -37,19 +37,18 @@ app.listen(port, function () {
 */
 
 // Para funcionar o IO precisa iniciar assim o listen
+/*
 http.listen(port, function () {
   console.log('Servidor rodando -> http://%s:%s', 'localhost', port);
 });
-
+*/
 
 //Heroko
-/*
 var app = require('./config/express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-app.set('io',io);
+app.set('io', io);
 var porta = process.env.PORT || 3000;
-http.listen(porta,fuhnction(){
+http.listen(porta, function () {
     console.log("Servidor rodando no heroku");
 });
-*/
