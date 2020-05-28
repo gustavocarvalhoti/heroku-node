@@ -1,4 +1,4 @@
-# Heroku - Node, MySQL
+# Treinamento Heroku - Node, MySQL
 
 ## Instalar
 ```
