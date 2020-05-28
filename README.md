@@ -17,7 +17,7 @@ npm install body-parser --save          <- Para pegar as informações do form
 npm install express-validator --save    <- Validador
 npm install mocha --save-dev            <- Testes
 npm install supertest --save-dev        <- Testes
-npm install ejs --save                  <- Criar páginas dinâmicas
+npm install ejs --save                  <- Criar páginas dinâmicas - Embedded JavaScript templates
 
 ### Criar as tabelas
 sql/create_database.sql
