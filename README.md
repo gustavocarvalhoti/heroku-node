@@ -44,6 +44,27 @@ kill -9 number
 
 ## Comentários
 ```
+GET DB Heroku Easy
+const groups = process.env.CLEARDB_DATABASE_URL.match(/mysql:\/\/(.*):(.*)@(.*)\/(.*)\?/);
+const user = groups[1];
+const pass = groups[2];
+const url = groups[3];
+const db = groups[4];
+
+console.log(`USER -> ${user}`);
+console.log(`PASS -> ${pass}`);
+console.log(`DB   -> ${db}`);
+console.log(`URL  -> ${url}`);
+
+sequelize = new Sequelize(
+            database,
+            user,
+            pass, {
+                host: url,
+                dialect: 'mysql',
+                logging: true
+            });
+        
 _connection <- Variavel privada
 Executar um arquivo -> node produtos.js
 
